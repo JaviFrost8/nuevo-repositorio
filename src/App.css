@@ -1,0 +1,76 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  border-radius: 20px;
+  color: #000;
+  padding: 30px;
+}
+
+.container-component{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+form input{
+  display: block;
+  display: flex;
+  width: 100%;
+  margin: 4px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+form input:focus{
+  outline: none;
+}
+
+form input[type='submit']{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(3, 89, 117);
+  color: #fff;
+  cursor: pointer;
+}
+
+.datos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.red{
+  font-weight: bold;
+  color: red;
+}
+
+.rango{
+  font-weight: bold;
+  color: #000;
+}
+
