@@ -1,11 +1,11 @@
 import './App.css'
-import { FormularioComponent } from './components/FormularioComponent'
+import { PadreComponent } from './components/PadreComponent'
 
 function App() {
 
   return (
     <div className='container'>
-      <FormularioComponent />
+      <PadreComponent />
 
     </div>
   )
