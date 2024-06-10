@@ -1,19 +1,21 @@
 export function calcularIMC(peso, altura){
-    const imc = peso / (altura * altura)
+    const calculo = peso / (altura * altura)
+
+    const imc = calculo.toFixed(2)
 
     let rango 
 
     if(imc < 18.5){
-        rango = 'bajo peso'
+        rango = 'Bajo peso'
 
     }else if(imc >= 18.5 && imc <= 24.9){
-        rango = 'normal'
+        rango = 'Peso normal'
         
     }else if(imc >= 25 && imc <= 29.9){
-        rango = 'sobrepeso'
+        rango = 'Sobrepeso'
         
     }else{
-        rango = 'obesidad'
+        rango = 'Obesidad'
     }
 
     return {imc, rango}
