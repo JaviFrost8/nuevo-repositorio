@@ -12,6 +12,8 @@ export const FormularioComponent = ({onCalcularMasa}) => {
         const peso = parseFloat(e.target.peso.value)
 
         onCalcularMasa({nombre, altura, peso})
+
+        formulario.current.reset()
     }
 
     return (
@@ -32,8 +34,8 @@ export const FormularioComponent = ({onCalcularMasa}) => {
                 <input type='number' name='peso' placeholder='Introduce tu peso...' />
 
                 <input type='submit' value='Calcular' />
-            </form>
-            
+            </form>      
         </div>
     )
 }
+
